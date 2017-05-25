@@ -1,0 +1,29 @@
+body{
+  background-color: #e6f2ff;
+}
+
+h1{
+text-align: center;
+font-size: 72px;
+font-family: fantasy;
+color: #0000ff;
+}
+#search-box{
+  float: right;
+}
+p{
+  text-align: justify;
+  font-size: 20px;
+  font-family: cursive;
+}
+h2{
+  font-size: 40px;
+  font-style: italic;
+  color: #005ce6;
+}
+
+iframe{
+  display: block;
+  margin: auto;
+  width: 40%;
+}

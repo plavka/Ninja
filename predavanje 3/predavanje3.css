@@ -1,0 +1,41 @@
+body{
+  background: #3366ff;
+}
+#prvi{
+  display: inline-block;
+  width: 30%;
+  background: #000066
+}
+#drugi{
+  display: inline-block;
+  width: 60%;
+  background: #0000ff;
+  position: relative;
+  left:50px;
+  top:0px;
+}
+.elem{
+
+}
+#vanjski{
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: #cc00cc;
+  margin: auto;
+
+}
+#vanjski div{
+  width: 50px;
+  height: 50px;
+
+
+}
+#vanjski div:first-of-type{
+  background-color: #ff3399;
+  padding: 20px;
+}
+#vanjski div:last-of-type{
+  background-color: #6b00b3;
+  margin: 20px;
+}

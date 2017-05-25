@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Tina Glas">
+
+        <title>Tina - Ultras life</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+      <div class="ultras-content ultras-section" style="max-width:500px">
+
+      <img class="mySlides ultras-animate-fading" src="ultras3.jpg">
+      <img class="mySlides ultras-animate-fading" src="ultras1.jpg">
+      <img class="mySlides ultras-animate-fading" src="ultras4.jpg">
+      <img class="mySlides ultras-animate-fading" src="ultras2.jpg">
+      </div>
+
+      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+<br>
+<input type="text" placeholder="Search" id="search-box">
+<br>
+<br>
+<style>
+.img-center{
+margin: 0 auto;
+display: block;
+}
+</style>
+<h1>Ultras life</h1>
+
+<h2>Ultras life in MLS</h2>
+<br>
+<p>On September tenth, the Quakes played a crucial game against the Seattle Sounders. Smoke bombs were lit in our sections. When it came time to face the consequences, the group accepted them and was prepared to move on.
+</p>
+<img id="san-jose" src="san jose.jpg" class="img-center" alt="san jose" height="220" width="450"/>
+<p>While entering the supporters gate at Avaya for the Sporting Kansas City game on September twenty-fourth, we were greeted by an unusually high number of police officers. The mood quickly went from excitement about the game to concern about the hostile environment we had just walked into. We were informed that the investigation over the smoke bombs had been reopened and that the police will make arrests and that anyone determined to be at fault would be charged with a felony. Furthermore, they threatened to disband our group if we violated any other rules. It was clear that the best decision was to walk away from this situation, so we calmly and silently left the stadium and returned to our tailgate area. Shortly after, a large group of police officers came to us and told us that they were sent to make us leave even though we had paid twenty-five dollars a car to be there.
+</p>
+<img id="san-jose2" src="san jose2.jpg" class="img-center" alt="san jose2" height="270" width="500"/>
+<p>We don’t consider it a badge of honor to “fight” with our FO. It is counterproductive for all parties involved and especially for our team. For the most part, the Quakes FO employees appreciate our group and are outstanding professionals and good individuals. This season began with both SJU and the Quakes FO working in good faith to improve our relationship, and we have seen a lot of progress over the course of it. The FO employees we have been working with have been open-minded, willing to listen to our concerns, and had the best intentions. However, one particular individual within the Quakes organization has been eager to undermine the progress that has been made by unnecessarily escalating minor issues with attempts at intimidation using a heavy police presence as a scare tactic rather than trying to communicate with us civilly. Unfortunately, that appears to be this person’s preferred method of communicating with our group since we’ve had many similar experiences over the last several years.
+</p>
+<img id="san-jose3" src="san jose3.jpg" class="img-center" alt="san jose3" height="220" width="450"/>
+<p>We did not protest our punishment and we were prepared to continue supporting our team and to help salvage a positive conclusion to this dismal season despite the restrictions imposed on us. With that said, we will not tolerate any further threats or attempts to intimidate us by an individual with a personal vendetta against this group who wasn’t satisfied with the punishment we received. The San Jose police department has more important things to do than to be used as a means to harass a bunch of soccer fans over a non-issue that had already been settled with people higher in the organization than the instigator of this senseless drama. San Jose Ultras will always be ready to support the Quakes until the bitter end, but if going into Avaya means that our membership is going to be unjustly threatened with arrests, we will not step foot inside the stadium until the harassment stops.
+</p>
+<br>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/0Nv00GcfJN0" frameborder="0" allowfullscreen></iframe>
+
+
+
+    </body>
+
+    </html>

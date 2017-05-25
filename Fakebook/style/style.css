@@ -1,0 +1,13 @@
+body{
+  background-color: lightblue;
+
+}
+h2{font-family: fantasy;
+}
+a{
+  color: #0000e6;
+}
+a:hover{
+  color: #0000ff;
+  font-size: 40px;
+}
