@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#korisnik mora izabrati broj izmedu 1 i 100
 
 print "Welcome to the fizzbuzz game!"
 
-end = raw_input("Please enter a number between 1 and 100: ")
+entry = raw_input("Please enter a number between 1 and 100: ")
 
 try:
-    end = int(end)
+    entry = int(entry)
 
-    for num in range(1, end+1):
+    for num in range(1, entry+1):
         if num % 3 == 0 and num % 5 == 0:
             print "fizzbuzz"
         elif num % 3 == 0:
