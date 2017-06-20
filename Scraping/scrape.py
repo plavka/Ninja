@@ -29,7 +29,7 @@ for item in response.findAll("a"): #s time dobijemo listu stringova s a tagovima
         #da bi dobili van samo spanove moramo sljedece
 
         email = soup.findAll("span", attrs={"class": "email"}) [0].string #0 iz razloga jer trazimo samo jedan element, email i korisnik ima samo 1 email, a 0 predstavlja prvi element
-        csv.write(name + "," +email + "\n") #\n je oznaka za novi red
+        csv.write(name + ";" +email + "\n") #\n je oznaka za novi red
 csv.close()
 print "\nCSV je napravljen"
 
