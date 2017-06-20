@@ -95,6 +95,21 @@ def main():
             delete_vehicle(vehicles)
         elif selection.lower() == "e":
             print "Thank you for using Vehicle List. Goodbye!"
+            def write_all_vehicles(vehicles):
+                for index, car in enumerate(vehicles):
+                    carList.write("Number: " + str(
+                    index) + "\n")
+                    carList.write("Vehicle brand and model: " + car.get_full_name() + "\n")
+                    carList.write("Kilometers: " + car.km_done + "\n")
+                    carList.write("General service date: " + car.service_date + "\n")
+                    carList.write("" + "\n")
+
+            if not vehicles:
+                print "You don't have any vehicles in your list."
+            carList = open("vehicles.txt", "w")
+            data = write_all_vehicles(vehicles)
+            carList.write(str(data))
+            carList.close()
             break
         else:
             print "Sorry, I didn't understan your selection. Please try again."
