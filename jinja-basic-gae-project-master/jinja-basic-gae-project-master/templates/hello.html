@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello Tina</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body>
+    <h1>Ovo je neki naslov</h1>
+    <h2>{{ title }}</h2>
+    {% if number > 1 %}
+        <p>Danas imamo nadoknadu</p>
+    {% else %}
+        <p>Danas nema nadoknade</p>
+    {% endif %}
+    <p>Broj predavanja danas: {{ number }}</p>
+    <form method="post">
+        <input type="text" name="text_input" placeholder="Naslov"/>
+        <input type="text" name="number_input" placeholder="Broj"/>
+        <input type="submit" value="Submit"/>
+    </form>
+
+
+</body>
+</html>
