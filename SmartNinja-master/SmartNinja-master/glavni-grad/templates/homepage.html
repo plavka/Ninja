@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+    Homepage
+{% endblock title %}
+{% block content %}
+    <h1>
+        Pogodi glavni grad države
+    </h1>
+    <p>
+        Koji je glavni grad države {{ drzava }}
+    </p>
+    <form method="post">
+        <input type="text" name="grad">
+        <input type="hidden" name="drzava" value="{{ drzava }}">
+        <input type="submit" value="Provjeri rezultat">
+    </form>
+{% endblock content %}

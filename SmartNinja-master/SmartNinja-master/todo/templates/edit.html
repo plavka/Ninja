@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO app</title>
+</head>
+<body>
+    <h1>
+        Edit task:
+    </h1>
+    <p>
+        {{ task.task }}
+    </p>
+    {{ done }}
+    <form method="post">
+        <input type="text" name="task" value="{{ task.task }}"/>
+        <input type="checkbox" name="done" value="1" {% if task.done %} checked {% endif %}/>
+        <input type="submit" value="Update task"/> Done
+        <a href="/">Cancel</a>
+    </form>
+</body>
+</html>

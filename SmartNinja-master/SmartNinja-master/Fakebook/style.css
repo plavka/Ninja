@@ -1,0 +1,13 @@
+body{
+  background-color: red;
+}
+h1{
+  font-size: 40px;
+}
+a{
+  color: #f06;
+}
+a:hover{
+  color: #0f0;
+  font-size: 40px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>TODO app</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Task list</h1>
+    <a href="{{ user_url }}">
+    {% if is_user %}
+        Logout
+    {% else %}
+         Login
+    {% endif %}
+    </a>
+    {% if is_user %}
+        {{ user }}
+        {{ user.email() }}
+        {{ user.nickname() }}
+    {% endif %}
+
+
+
+    <form method="post">
+        <input type="text" name="task" />
+        <input type="submit" value="Add task"/>
+    </form>
+    <table>
+        {% for task in tasks %}
+        <tr>
+            <td>
+                {{ task.task }}
+            </td>
+            <td>
+                {{ task.done }}
+            </td>
+            <td>
+                <a href="/delete/{{ task.key.id() }}">
+                    Delete
+                </a>
+                <a href="/edit/{{ task.key.id() }}">Edit</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
