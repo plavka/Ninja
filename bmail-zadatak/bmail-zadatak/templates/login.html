@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+
+        <form method="post" action="/login">
+            <input name="nickname" placeholder="Enter your nickname" required value="{{ mail }}"> <br>
+            <input name="password" placeholder="Enter your password" type="password"> <br>
+
+            <button type="submit">Log in</button>
+        </form>
+
+{% endblock body %}
