@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block body %}
+
+    <div class="container-fluid text-center" class="weather">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+               <a href="/" class="btn btn-default">Go Back</a><br/>
+            </div>
+            <div class="col-sm-8 text-center">
+               <h3>Weather in the city {{ data.name }}:</h3><br/>
+
+        <p>Weather: {{ data.weather[0].description }}</p>
+        <p>Current temperature: {{ data.main.temp }} &#x2103;</p>
+        <p>Lowest temperature: {{ data.main.temp_min }} &#x2103;</p>
+        <p>Highest temperature: {{ data.main.temp_max }} &#x2103;</p>
+        <p>Humidity: {{ data.main.humidity }} %</p>
+        <p>Wind: {{ data.wind.speed }} km/h</p>
+
+            </div>
+        <div class="col-sm-2 sidenav">
+        </div>
+        </div>
+    </div>
+
+
+{% endblock body %}

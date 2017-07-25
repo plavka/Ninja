@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>Message list</h1>
+<ul>
+{% for poruka in messages %}
+    <li>
+        <label>
+            {{ poruka.message_text }}
+        </label>
+        <p>
+            {% if poruka.message_time != None  %}
+                {{ poruka.message_time }}
+            {% endif %}
+        </p>
+        <a href="/messages/{{ poruka.key.id() }}/edit">
+            Edit
+        </a>
+        <a href="/messages/{{ poruka.key.id() }}/delete">
+            Delete
+        </a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock body %}

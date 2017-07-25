@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Bmail</h1>
+
+    <div class="col-sm-2 sidenav">
+               <a href="/weather" class="btn btn-default">Weather</a><br/>
+    </div>
+
+    <div class="col-sm-2 sidenav">
+               <a href="/messages" class="btn btn-default">Messages</a><br/>
+    </div>
+    <br>
+    <br>
+    <br>
+
+     <a href="{{ user_url }}">
+    {% if is_user %}
+        Logout
+    {% else %}
+         Login
+    {% endif %}
+    </a>
+    {% if is_user %}
+        {{ user }}
+        {{ user.email() }}
+        {{ user.nickname() }}
+    {% endif %}
+
+    <form method="post">
+        <input type="text" name="message" />
+        <input type="submit" value="Login" />
+    </form>
+    <p>{{ message }}</p>
+{% endblock body %}

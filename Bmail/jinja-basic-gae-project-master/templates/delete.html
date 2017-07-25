@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Message delete</h1>
+    <form method="post">
+        <p>
+           Do you really want to delete the message?
+            {{ message.message_text }}
+        </p>
+        <input type="submit" value="Delete message" />
+    </form>
+{% endblock body %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block body %}
+    <h1>Message edit</h1>
+    <form method="post">
+        <input type="text" name="message" value="{{ message.message_text }}" />
+        <input type="submit" value="Update message" />
+    </form>
+{% endblock body %}
